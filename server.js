@@ -12,7 +12,7 @@ const {
 } = require("./config");
 const redis = require("redis");
 const bluebird = require("bluebird");
-const client = redis.createClient();
+const client = redis.createClient(process.env.REDIS_URL);
 bluebird.promisifyAll(redis.RedisClient.prototype);
 bluebird.promisifyAll(redis.Multi.prototype);
 
@@ -31,6 +31,8 @@ client.on("error", function(error) {
 client.on("connect", function() {
   console.log("connected to redis");
 });
+
+console.log(CLIENT_ORIGIN);
 
 app.use(
   cors({
