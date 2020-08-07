@@ -1,0 +1,27 @@
+{
+  "name": "makeship-backend",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Humza Faheemuddin",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.7.2",
+    "body-parser": "^1.19.0",
+    "bottleneck": "^2.19.5",
+    "cloudinary": "^1.22.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-form-data": "^2.0.14",
+    "morgan": "^1.9.1",
+    "nodemon": "^2.0.4",
+    "redis": "^3.0.2"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0"
+  }
+}
