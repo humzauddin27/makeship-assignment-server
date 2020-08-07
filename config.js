@@ -1,6 +1,6 @@
 exports.CLIENT_ORIGIN =
   process.env.NODE_ENV === "production"
-    ? "https://humzas-image-viewer.herokuapp.com/"
+    ? "https://humzas-image-viewer.herokuapp.com"
     : "http://localhost:3000";
 
 exports._IMAGES = "images";
